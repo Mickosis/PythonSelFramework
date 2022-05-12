@@ -15,7 +15,7 @@ class TestOne(BaseClass):
         for product in products:
             product_name = product.find_element(By.XPATH, "div/h4/a").text
             log.info(product_name)
-            if product_name == "Blackberry":
+            if product_name == "iphone X":
                 log.info("Product found")
                 product.find_element(By.XPATH, "div/button").click()
         checkout_page.check_out_items().click()
